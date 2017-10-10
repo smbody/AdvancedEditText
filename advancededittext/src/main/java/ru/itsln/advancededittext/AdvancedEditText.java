@@ -32,6 +32,10 @@ public class AdvancedEditText extends AppCompatEditText {
         watcher.insert(template);
     }
 
+    public void insert(String template, int start, int end) {
+        watcher.insert(template, start, end);
+    }
+
     public void setSpans(SpanFactory spans) {
         watcher.setSpans(spans);
     }
